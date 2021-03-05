@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Lato&family=Montserrat&family=Oswald&family=Roboto&family=Source+Code+Pro:ital,wght@0,600;0,700;0,900;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background: #111d4a;
+    color: rgba(255, 255, 255, 0.6);
+
+    /* center app on the display. */
+    display: flex;
+}
+
+/* containers */
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.component {
+    /* border: 4px solid white; */
+    height: 100%;
+    width: 80%;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: auto;
+    /* for testing */
+    max-width: 800px;
+    max-height: 800px;
+    min-width: 360px;
+    min-height: 600px;
+    padding: 0;
+}
+
+.image {
+    background-image: url("/img/tech.jpg");
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 40%;
+    width: 100%;
+    height: 30%;
+    align-self: stretch;
+}
+
+.title {
+    font-weight: 700;
+    color: #05cbe9;
+    margin-top: 1em;
+    font-family: "blinker", sans-serif;
+    /* letter-spacing: 1px; */
+    font-size: 2rem;
+}
+
+.body {
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+.written-content {
+    height: 70%;
+    width: 80%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: #05cbe9 4px solid;
+    border-right: #05cbe9 4px solid;
+    border-bottom: #05cbe9 4px solid;
+}
+
+.written-content>* {
+    width: 90%;
+}
+
+.time-button {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    margin-bottom: 2em;
+}
+
+.time-button p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    flex: 0 1 100px;
+    /* border: 1px solid white; */
+}
+
+.time-button>p>span {
+    font-size: 2rem;
+    padding: 0;
+    flex: 0 1 auto;
+}
+
+.time {
+    font-size: 42px;
+    font-weight: 900;
+    display: block;
+    align-self: flex-start;
+}
+
+.button {
+    padding: 0.5em 1em;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 900;
+    /* transform: scale(0.9); */
+    transition: padding 500ms linear, color 500ms linear;
+}
+
+.button:hover {
+    background: #05cbe9;
+    padding: 0.5em 1.5em;
+    color: #ffffff;
+}
+
+@media (orientation: landscape) {
+    .component {
+        flex-flow: row nowrap;
+        max-height: 400px;
+    }
+
+    .image {
+        flex: 1 1 40%;
+        align-self: stretch;
+        height: 100%;
+    }
+
+    .written-content {
+        width: 90%;
+        flex: 3 1 60%;
+        align-self: stretch;
+        height: 100%;
+    }
+}
+
+@media (orientation: portrait) {
+    .component {
+        max-height: 800px;
+        max-width: 500px;
+        border: #05cbe9 4px solid;
+    }
+
+    .written-content {
+        border: none;
+    }
+}
