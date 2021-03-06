@@ -6,7 +6,7 @@ Learning flexbox for Responsive Web Development. Call to action card using flexb
 For now, this is it! 
 
 ## Where is the Link
-<a href="https://iamserda.github.io/flexiblecardexample/" target="_blank">flex-card</a>
+<a href="https://iamserda.github.io/flexboxcardexample" target="_blank">flex-card</a>
 
 
 Questions, concerns, emotional outbursts? Reach out!
