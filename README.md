@@ -1,19 +1,16 @@
-# title(){
-		
-		return this.options.title || this.options.name;
-	}
+# Flexible Card Example
 
-## Supporting Scrimba
+## What is it?
+Learning flexbox for Responsive Web Development. Call to action card using flexbox.
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
+For now, this is it! 
 
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
+## Where is the Link
+<a href="https://iamserda.github.io/flexiblecardexample/" target="_blank">flex-card</a>
 
-	It would also mean the world to us if you share the courses.  
 
-Happy Coding!
+Questions, concerns, emotional outbursts? Reach out!
+- Twitter: <a href="https://twitter.com/iamserda">@iamserda</a>
+- LinkedIn: <a href="https://linkedin.com/in/iamserda" target="_blank">iamserda</a>
+
+Made with ❤️ in Inwood, NYC. Circa March 2021.
